@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', popins;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  padding: 8em;
+}
+
+body {
+  background: linear-gradient(to left top, #2FECF7, #0DFF82);
+
+}
+
+form {
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 20px 0px #adadad;
+  -moz-box-shadow: 5px 5px 20px 0px #adadad;
+  box-shadow: 5px 5px 20px 0px #adadad;
+  padding: 2.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 38px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .large-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .small-group {
+    width: 45%;
+  }
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px 16px;
+  width: 100%;
+  outline: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ededed;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.textarea-div {
+  width: 100%;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #ededed;
+  font-size: 14px;
+  height: 100px;
+}
+
+.btn {
+  background-color: #0DFF82;
+  padding: 12px 15px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: 0.3s all ease;
+}
+.btn:hover {
+  background-color: #2FECF7;
+}

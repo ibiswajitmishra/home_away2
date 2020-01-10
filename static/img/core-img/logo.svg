@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="70.889" viewBox="0 0 59 70.889">
+  <defs>
+    <filter id="Path_3" x="0.4" y="0" width="57.326" height="55.34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="HOME_AWAY_FROM_HOME" x="0" y="38.889" width="59" height="32" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_16" x="0.4" y="0" width="57.326" height="55.34" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-46 -7.111)">
+    <g transform="matrix(1, 0, 0, 1, 46, 7.11)" filter="url(#Path_3)">
+      <path id="Path_3-2" data-name="Path 3" d="M259.325,313.426l.067-6.073h3.9v22.81H235.24V328.41c0-6.606.028-13.211-.027-19.816a2.659,2.659,0,0,1,1.243-2.482q8.765-6.359,17.46-12.838a1.379,1.379,0,0,1,1.929-.029c5.888,4.375,11.814,8.688,17.694,13.076a2.583,2.583,0,0,1,.984,1.7c.064,7.122-.1,15-.108,22.127,0,.217.061-.325,0,0h-3.838V319.144c0-2.7.045-5.4-.036-8.1a2.426,2.426,0,0,0-.785-1.636q-6.946-5.2-13.989-10.239a1.758,1.758,0,0,0-1.706-.028q-6.983,4.982-13.864,10.137a2.389,2.389,0,0,0-.942,1.546c-.072,4.934-.043,9.87-.043,14.96h20.112v-7.96c-2.555,0-5.029-.036-7.5.054a.939.939,0,0,0-.68.833c-.083,1.657-.064,3.662-.064,5.448h-3.816V307.306h3.816c0,1.7-.014,3.76.087,5.351a.887.887,0,0,0,.778.768C254.366,313.526,256.724,313.426,259.325,313.426Z" transform="translate(-225.81 -286.87)" fill="#f5f5f5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 46, 7.11)" filter="url(#HOME_AWAY_FROM_HOME)">
+      <text id="HOME_AWAY_FROM_HOME-2" data-name="HOME AWAY 
+FROM HOME" transform="translate(9 50.89)" fill="#f5f5f5" font-size="6.3" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">HOME AWAY </tspan><tspan x="0" y="7">FROM HOME</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 46, 7.11)" filter="url(#Path_16)">
+      <path id="Path_16-2" data-name="Path 16" d="M259.325,313.426l.067-6.073h3.9v22.81H235.24V328.41c0-6.606.028-13.211-.027-19.816a2.659,2.659,0,0,1,1.243-2.482q8.765-6.359,17.46-12.838a1.379,1.379,0,0,1,1.929-.029c5.888,4.375,11.814,8.688,17.694,13.076a2.583,2.583,0,0,1,.984,1.7c.064,7.122-.1,15-.108,22.127,0,.217.061-.325,0,0h-3.838V319.144c0-2.7.045-5.4-.036-8.1a2.426,2.426,0,0,0-.785-1.636q-6.946-5.2-13.989-10.239a1.758,1.758,0,0,0-1.706-.028q-6.983,4.982-13.864,10.137a2.389,2.389,0,0,0-.942,1.546c-.072,4.934-.043,9.87-.043,14.96h20.112v-7.96c-2.555,0-5.029-.036-7.5.054a.939.939,0,0,0-.68.833c-.083,1.657-.064,3.662-.064,5.448h-3.816V307.306h3.816c0,1.7-.014,3.76.087,5.351a.887.887,0,0,0,.778.768C254.366,313.526,256.724,313.426,259.325,313.426Z" transform="translate(-225.81 -286.87)" fill="#f5f5f5"/>
+    </g>
+  </g>
+</svg>

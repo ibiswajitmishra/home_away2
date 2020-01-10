@@ -1,0 +1,332 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<button type="button" class="btn btn-2">Hi {{ user.username }}!</button>
+<button type="button" class="btn btn-3"><a href="{% url 'logout' %}">logout</a></button>
+
+{% else %}
+  
+  
+
+
+<button type="button" class="btn btn-2"><a href="{% url 'home' %}">Home</a></button>
+  <button type="button" class="btn btn-2"><a href="{% url 'login' %}">login</a></button>
+|
+<button type="button" class="btn btn-3"><a href="{% url 'signup' %}">signup</a></button>
+<button type="button" class="btn btn-3"><a href="{% url 'searchforroomates' %}">SearchRoomate</a></button>
+<button type="button" class="btn btn-3"><a href="{% url 'contact' %}">Contact Us</a></button>
+
+
+
+{% endif %}
+
+
+{% endblock %}
+
+
+{% block content2 %}
+<!-- ##### Hero Area Start ##### -->
+    
+<section class="hero-area">
+        
+       
+
+    <!-- Single Hero Slide -->
+    <div class="single-hero-slide d-flex align-items-center justify-content-center">
+        <!-- Slide Img -->
+        
+        <div class="slide-img bg-img" style="background-image: url(../static/img/bg-img/bg-1.jpg);"></div>
+       
+        <div class="container">
+                <div class="a">HOME AWAY FROM HOME </div>
+                
+             <div class="row justify-content-center">
+            <form class="">
+                <div class="form-row justify-content-center">
+                    <div class="searchform searchbar offset-sm-1 col-sm-7" style="background-image: url(static/img/bg-img/c.png);">
+                        <input type="text" class="search form-control justify-content-xs-center" placeholder="City">
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-secondary search" formaction="rooms.html">Search</button>
+                    </div>
+            </form>
+                <img src="{% static 'img/bg-img/b.png' %}" class="c" alt="">
+        </div>
+    </div>
+    <style>
+        .btn-2 {
+    letter-spacing: 0;
+    margin-right: 10px;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-right: 20px !important;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 50px;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 90%;
+}
+</style>
+<style >
+.btn-3 {
+    letter-spacing: 0;
+    margin-right: 10px !important;
+}
+
+.btn-3:hover,
+.btn-3:active {
+  letter-spacing: 5px;
+}
+
+.btn-3:after,
+.btn-3:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-right: 20px !important;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 50px;
+}
+
+.btn-3:hover:after,
+.btn-3:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-3:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 90%;
+}
+
+
+/////////////////////////////
+//button -3 
+//////////////////////////
+
+        img.b{
+            width: 1100px;
+            height: 140px;
+            margin-bottom: 40px !important;
+
+        }
+        img.c
+        {
+            width: 1100px;
+            height: 140px;
+            margin-bottom: 250px !important;
+        }
+
+    div.a {
+font-size: 52px;
+color:#fff;
+margin-bottom: 10px !important ;
+margin-left: 10px !important;
+font-family: "helvetica";
+font-weight: bold;
+font-style: normal;
+}
+    </style>
+
+    <!-- Single Hero Slide -->
+    
+    <!-- Single Hero Slide -->
+    
+</section>
+
+
+<!-- ##### About Us Area Start ##### -->
+
+<!-- ##### About Us Area End ##### -->
+
+
+
+<!-- ##### Rooms Area Start ##### -->
+<section class="rooms-area section-padding-100-0">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+            <div class="section-heading text-center">
+                <div class="line-"></div>
+                <strong>TRENDING ROOMS</strong>
+                <style>
+                
+
+strong { 
+font-weight: bold;
+font-size:60px;
+}
+</style>
+                
+            <p>There is nothing like crafting a well-designed living room that is suitable for enjoying family time and entertaining
+            loved ones. This primary spot sets the tone for the rest of your homeâ€™s decor. Itâ€™s also one of the best places to
+            showcase your design aesthetic by experimenting with color palettes, layers of texture and patterns, and a variety of
+            furniture layouts. Itâ€™s meant to be comfortable, inviting, and full of style. Plus, if youâ€™re a design enthusiast, itâ€™s
+            an ideal space to put your favorite trends to the test, whether itâ€™s opting for maximalist art or going bold with
+            metallic wall paint.
+            
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+
+        <!-- Single Rooms Area -->
+       <div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+<h4>Matrix Boy's Hostel</h4>
+<p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+                <!-- Thumbnail -->
+                
+
+        <!-- Single Rooms Area -->
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+<h4>Matrix Boy's Hostel</h4>
+<p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+<h4>Matrix Boy's Hostel</h4>
+<p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+
+
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+<h4>Matrix Boy's Hostel</h4>
+<p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+<div class="container">
+<div class="row justify-content-center">
+
+
+<!-- Single Rooms Area -->
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+    <h4>Matrix Boy's Hostel</h4>
+    <p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+<!-- Thumbnail -->
+
+
+<!-- Single Rooms Area -->
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+    <h4>Matrix Boy's Hostel</h4>
+    <p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+
+
+
+
+<div class="polaroid">
+<a href="template.html"> <img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+    <h4>Matrix Boy's Hostel</h4>
+    <p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+<div class="polaroid">
+<a href="template.html"><img src="{% static 'img/bg-img/B1.jpg' %}" alt="5 Terre" style="width:110%"></a>
+<div class="container">
+    <h4>Matrix Boy's Hostel</h4>
+    <p>Address : Patna 1 BHK , AC/Non-AC + Bathroom attached</p>
+</div>
+</div>
+
+
+
+</div>
+
+
+        
+ 
+</section>
+<!-- ##### Rooms Area End ##### -->
+
+<!-- ##### Contact Area Start ##### -->
+<section class="contact-area d-flex flex-wrap align-items-center">
+<div class="home-map-area">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.8610724211!2d85.07300196002794!3d25.608175570420208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1566909436442!5m2!1sen!2sin"
+width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>       
+</div>
+<!-- Contact Info -->
+<div class="contact-info">
+    <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+        <div class="line-"></div>
+        <h2>Contact Info</h2>
+        <p>A contact page is a standard web page on a website used to allow the visitor to contact the ... Tools. What links here Â·
+        Related changes Â· Upload file Â· Special pages Â· Permanent link Â· Page information</p>
+    </div>
+    <h4 class="wow fadeInUp" data-wow-delay="300ms">Patna , Bihar</h4>
+    <h5 class="wow fadeInUp" data-wow-delay="400ms">+91 993 7953 32453</h5>
+    <h5 class="wow fadeInUp" data-wow-delay="500ms">homeawayfromhome@gmail.com</h5>
+    <!-- Social Info -->
+    <div class="social-info mt-50 wow fadeInUp" data-wow-delay="600ms">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       
+</div>
+</section>
+<!-- ##### Contact Area End ##### -->
+{% endblock %}
