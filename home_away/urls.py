@@ -24,5 +24,6 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('users/', include('django.contrib.auth.urls')),
     path('contact/', views.ContactView, name='contact'),
-    path('searchforroomates/' , search.SearchforroomatesView, name='searchforroomates')
+    path('searchforroomates/' , search.SearchforroomatesView, name='searchforroomates'),
+    path('roominfo/', search.RoomDetail, name='detail')
 ]

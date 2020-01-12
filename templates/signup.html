@@ -2,6 +2,10 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<nav class="classy-navbar justify-content-between" id="palatinNav">
+
+                        <!-- Nav brand -->
+                        <div class="logo"><a href="{% url 'home' %}" class="nav-brand"><img src="{% static 'img/core-img/logo.svg' %}" alt="" width="50px" height="50px" ></a></div>
 <div class="row justify-content-center" >
 <div class="col-6">
     <div class="card" style= "width:600px;height: 810px; margin-top: 5%; margin-left: 10%; background-color: rgba(120, 120, 120, 0.45);">
@@ -13,6 +17,7 @@
     background-repeat: no-repeat;
 
 }
+
         </style>
 
 <div class="card-body">

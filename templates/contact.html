@@ -1,10 +1,15 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title> Contact Us Responsive</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"><link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+  <div class="logo"><a href="{% url 'home' %}" class="nav-brand"><img src="{% static 'img/core-img/logo.svg' %}" alt="" width="50px" height="50px" ></a></div>
     <style type="text/css">
       body{
         background-image: url("bg-1.jpg");
@@ -28,7 +33,6 @@
 </head>
 <body>
   <h1 id="myHeader">Contact Details</h1>
-
 <!-- partial:index.partial.html -->
 <section class="contact-page-sec">
     <div class="container">
